@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/menu_logo.png" alt="Phở Logic logo" width="120" />
+  <img src="images/menu_logo.png" alt="Phở Logic logo" width="300" />
 </div>
 
 <h1 align="center">Phở Logic 🥢</h1>

@@ -22,25 +22,20 @@ The goal is to design a fun core loop (swap → match → clear → refill) whil
 ---
 
 ## 🎮 Gameplay
-- Swap two adjacent tiles to create **3+ matches**
-- Matches clear the board and **tiles fall with gravity**
-- Combos and chain reactions can create **special tiles**
-- Levels are designed to be short, replayable, and satisfying
+Swap two adjacent tiles to create **3+ matches**
+Matches clear the board and **tiles fall with gravity**
+Combos and chain reactions can create **special tiles**
+Levels are designed to be short, replayable, and satisfying
 
 ---
 
 ## 🧰 Tech Stack
-- **Flutter (Dart)**
-- **Flame** (2D game framework)
-- **JSON-driven UI/layout** for screens and positioning
-- Modular structure for board logic, match detection, animations, and effects
+**Flutter (Dart)**
+**Flame** (2D game framework)
+**JSON-driven UI/layout** for screens and positioning
+Modular structure for board logic, match detection, animations, and effects
 
 ---
 
-## 🗂️ Project Highlights
-- **Grid + Match System**: horizontal/vertical match finding, removal, collapse, refill
-- **Special Tiles**: powered effects (example shown above: *Sticky Rice Bomb*)
-- **Data-driven Layout**: screen elements defined in JSON for easier iteration
-- **Beginner-friendly Codebase**: organized for learning and future expansion
 
 ---

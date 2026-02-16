@@ -36,6 +36,11 @@ Levels are designed to be short, replayable, and satisfying
 Modular structure for board logic, match detection, animations, and effects
 
 ---
+## Privacy Policy
+This app has Privacy Policy in compliance with Google Play Console Regulation and standard GDPR for global publishing.
+The details of the the Privacy Policy can be published here:
+https://cuongme.github.io/pho_logic_mvp/
 
-
----
+##Technical Documentation
+For more those who are interested on how the game was made, check out this documentation. 
+https://cuongme.github.io/pho_logic_mvp/documentation.html

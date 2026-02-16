@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">Phở Logic 🥢</h1>
-<p align="center"><b>Vietnamese-themed Match-3 Puzzle Game (Student Project)</b></p>
+<p align="center"><b>Vietnamese-themed Match-3 Puzzle Game (Learning Project)</b></p>
 
 <p align="center">
 A cozy match-3 puzzle game inspired by Vietnamese food culture. Swap tiles, trigger combos, and unlock special items — all wrapped in a clean UI and a lightweight game architecture.

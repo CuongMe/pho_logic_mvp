@@ -41,6 +41,9 @@ This app has Privacy Policy in compliance with Google Play Console Regulation an
 The details of the the Privacy Policy can be published here:
 https://cuongme.github.io/pho_logic_mvp/
 
-##Technical Documentation
+## Technical Documentation
 For more those who are interested on how the game was made, check out this documentation. 
 https://cuongme.github.io/pho_logic_mvp/documentation.html
+
+## Live run on Itch.io
+https://cuongme.itch.io/ph-logic

@@ -1,89 +1,37 @@
-# Pho Logic
+﻿# Pho Logic
 
 <div align="center">
-  <img src="images/menu_logo.png" alt="Pho Logic logo" width="280" />
-  <p><b>Vietnamese-themed Match-3 puzzle game built with Flutter and Flame.</b></p>
+  <img src="images/menu_logo.png" alt="Pho Logic logo" width="300" />
+  <p><b>Vietnamese-inspired Match-3 puzzle game crafted with Flutter and Flame.</b></p>
 </div>
 
-## Quick Links
-- Play on Itch.io: https://cuongme.itch.io/ph-logic
-- Privacy Policy: https://cuongme.github.io/pho_logic_mvp/
-- Technical Documentation: https://cuongme.github.io/pho_logic_mvp/documentation.html
+<p align="center">
+  <a href="https://cuongme.itch.io/ph-logic">Play Demo</a> •
+  <a href="https://cuongme.github.io/pho_logic_mvp/documentation.html">Technical Documentation</a> •
+  <a href="https://cuongme.github.io/pho_logic_mvp/">Privacy Policy</a>
+</p>
 
-## About
-Pho Logic is a cozy match-3 game inspired by Vietnamese food culture.
-The core gameplay loop is:
-swap -> match -> clear -> refill.
+## About The Game
+Pho Logic is a colorful puzzle experience inspired by Vietnamese cuisine, festive street culture, and the satisfying rhythm of modern Match-3 design. Every stage is built to feel fast, readable, and rewarding, from the first tile swap to the last cascade. Instead of relying on visual noise, the game emphasizes clear board states, expressive effects, and a playful identity rooted in Vietnamese food icons and seasonal celebration energy.
 
-This project is focused on clean game architecture, responsive UI, and strong visual feedback.
+At its core, the game is designed around flow. A turn begins with a simple swap, then quickly expands into chain reactions, special interactions, and board-wide momentum shifts. Power abilities are made to feel impactful without overwhelming the player, so strategy remains understandable while still producing dramatic moments. This balance between clarity and spectacle is the central design goal of the project.
 
-## Gameplay Highlights
-- Match 3 or more tiles to clear the board.
-- Cascading matches create combo chains.
-- Special power-ups add strategic depth.
-- Fast level flow designed for short, replayable sessions.
-- JSON-driven screen layout and positioning system.
+Pho Logic is also a technical prototype for scalable content production. Layout and positioning are driven through JSON design files so screen composition remains consistent across different device sizes. This allows artwork, world elements, and gameplay UI to stay visually aligned while the game adapts responsively. The architecture is intentionally modular, separating board logic, rendering, audio, and inventory systems so the project can evolve into a larger production-ready title.
 
-## GIF Showcase
-All gameplay GIF files from `gif/` are shown below.
+## Gameplay Showcase
 
 | Blocker | Dragon Fly |
 | --- | --- |
-| <img src="gif/blocker.gif" alt="Blocker" width="280" /> | <img src="gif/dragon_fly.gif" alt="Dragon Fly" width="280" /> |
+| <img src="gif/blocker.gif" alt="Blocker animation" width="300" /> | <img src="gif/dragon_fly.gif" alt="Dragon Fly animation" width="300" /> |
 
-| Firecracker | Horizontal Party Popper |
+| Firecracker | Sticky Rice Bomb |
 | --- | --- |
-| <img src="gif/firecracker.gif" alt="Firecracker" width="280" /> | <img src="gif/horizontal_party_popper.gif" alt="Horizontal Party Popper" width="280" /> |
+| <img src="gif/firecracker.gif" alt="Firecracker animation" width="300" /> | <img src="gif/sticky_rice_bomb.gif" alt="Sticky Rice Bomb animation" width="300" /> |
 
-| Sticky Rice Bomb | Vertical Party Popper |
-| --- | --- |
-| <img src="gif/sticky_rice_bomb.gif" alt="Sticky Rice Bomb" width="280" /> | <img src="gif/vertical_party_popper.gif" alt="Vertical Party Popper" width="280" /> |
+## Project Description
+Pho Logic is built with Flutter (Dart) and the Flame engine, combining app-level flexibility with focused 2D gameplay performance. The project structure separates gameplay systems, reusable UI components, and data-driven layout definitions so each part can be improved without destabilizing the rest of the game. This repository contains the complete source, assets, JSON design files, and web documentation site for the MVP.
 
-## Tech Stack
-- Flutter (Dart)
-- Flame
-- flame_audio
-- audioplayers
-- shared_preferences
-- url_launcher
-
-## Project Structure
-```text
-lib/                 Flutter app and game logic
-assets/              Game assets (sprites, backgrounds, audio, JSON)
-assets/json_design/  JSON-driven UI layouts
-gif/                 Gameplay GIF previews
-android/ ios/ web/   Platform targets
-```
-
-## Getting Started
-### Prerequisites
-- Flutter SDK installed
-- Dart SDK available through Flutter
-- Android SDK (for Android builds)
-
-### Run
-```bash
-flutter pub get
-flutter run
-```
-
-### Build
-```bash
-flutter build apk --release
-flutter build appbundle --release
-flutter build web --release
-```
-
-### Build Web ZIP (PowerShell)
-```powershell
-flutter build web --release
-Compress-Archive -Path build\web\* -DestinationPath build\pho_logic_web_release.zip -Force
-```
-
-## Version
-Current app version in `pubspec.yaml`: `1.0.0+6`.
+The current version is `1.0.0+6`, and the project remains an actively refined prototype centered on gameplay feel, visual consistency, and cross-platform reliability.
 
 ## License
-Copyright (c) 2026 Cuong Tran.
-All rights reserved.
+Licensed under the MIT License. See `LICENSE`.

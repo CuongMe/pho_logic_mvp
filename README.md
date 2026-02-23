@@ -1,49 +1,89 @@
+# Pho Logic
+
 <div align="center">
-  <img src="images/menu_logo.png" alt="Phở Logic logo" width="300" />
+  <img src="images/menu_logo.png" alt="Pho Logic logo" width="280" />
+  <p><b>Vietnamese-themed Match-3 puzzle game built with Flutter and Flame.</b></p>
 </div>
 
-<h1 align="center">Phở Logic 🥢</h1>
-<p align="center"><b>Vietnamese-themed Match-3 Puzzle Game (Learning Project)</b></p>
+## Quick Links
+- Play on Itch.io: https://cuongme.itch.io/ph-logic
+- Privacy Policy: https://cuongme.github.io/pho_logic_mvp/
+- Technical Documentation: https://cuongme.github.io/pho_logic_mvp/documentation.html
 
-<p align="center">
-A cozy match-3 puzzle game inspired by Vietnamese food culture. Swap tiles, trigger combos, and unlock special items — all wrapped in a clean UI and a lightweight game architecture.
-</p>
+## About
+Pho Logic is a cozy match-3 game inspired by Vietnamese food culture.
+The core gameplay loop is:
+swap -> match -> clear -> refill.
 
-<p align="center">
-  <img src="gif/sticky_rice_bomb.gif" alt="Sticky Rice Bomb demo" width="520" />
-</p>
+This project is focused on clean game architecture, responsive UI, and strong visual feedback.
 
----
+## Gameplay Highlights
+- Match 3 or more tiles to clear the board.
+- Cascading matches create combo chains.
+- Special power-ups add strategic depth.
+- Fast level flow designed for short, replayable sessions.
+- JSON-driven screen layout and positioning system.
 
-## 🌟 About
-**Phở Logic** is a match-3 puzzle game built as a learning and portfolio project.  
-The goal is to design a fun core loop (swap → match → clear → refill) while practicing game architecture, UI layout, and visual feedback.
+## GIF Showcase
+All gameplay GIF files from `gif/` are shown below.
 
----
+| Blocker | Dragon Fly |
+| --- | --- |
+| <img src="gif/blocker.gif" alt="Blocker" width="280" /> | <img src="gif/dragon_fly.gif" alt="Dragon Fly" width="280" /> |
 
-## 🎮 Gameplay
-Swap two adjacent tiles to create **3+ matches**
-Matches clear the board and **tiles fall with gravity**
-Combos and chain reactions can create **special tiles**
-Levels are designed to be short, replayable, and satisfying
+| Firecracker | Horizontal Party Popper |
+| --- | --- |
+| <img src="gif/firecracker.gif" alt="Firecracker" width="280" /> | <img src="gif/horizontal_party_popper.gif" alt="Horizontal Party Popper" width="280" /> |
 
----
+| Sticky Rice Bomb | Vertical Party Popper |
+| --- | --- |
+| <img src="gif/sticky_rice_bomb.gif" alt="Sticky Rice Bomb" width="280" /> | <img src="gif/vertical_party_popper.gif" alt="Vertical Party Popper" width="280" /> |
 
-## 🧰 Tech Stack
-**Flutter (Dart)**
-**Flame** (2D game framework)
-**JSON-driven UI/layout** for screens and positioning
-Modular structure for board logic, match detection, animations, and effects
+## Tech Stack
+- Flutter (Dart)
+- Flame
+- flame_audio
+- audioplayers
+- shared_preferences
+- url_launcher
 
----
-## Privacy Policy
-This app has Privacy Policy in compliance with Google Play Console Regulation and standard GDPR for global publishing.
-The details of the the Privacy Policy can be published here:
-https://cuongme.github.io/pho_logic_mvp/
+## Project Structure
+```text
+lib/                 Flutter app and game logic
+assets/              Game assets (sprites, backgrounds, audio, JSON)
+assets/json_design/  JSON-driven UI layouts
+gif/                 Gameplay GIF previews
+android/ ios/ web/   Platform targets
+```
 
-## Technical Documentation
-For more those who are interested on how the game was made, check out this documentation. 
-https://cuongme.github.io/pho_logic_mvp/documentation.html
+## Getting Started
+### Prerequisites
+- Flutter SDK installed
+- Dart SDK available through Flutter
+- Android SDK (for Android builds)
 
-## Live run on Itch.io
-https://cuongme.itch.io/ph-logic
+### Run
+```bash
+flutter pub get
+flutter run
+```
+
+### Build
+```bash
+flutter build apk --release
+flutter build appbundle --release
+flutter build web --release
+```
+
+### Build Web ZIP (PowerShell)
+```powershell
+flutter build web --release
+Compress-Archive -Path build\web\* -DestinationPath build\pho_logic_web_release.zip -Force
+```
+
+## Version
+Current app version in `pubspec.yaml`: `1.0.0+6`.
+
+## License
+Copyright (c) 2026 Cuong Tran.
+All rights reserved.

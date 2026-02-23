@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentation — Phở Logic</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body class="documentation">
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="images/app_launcher_icon.png" alt="Phở Logic logo" />
+        <div class="brand-text">
+          <span class="brand-title">Phở Logic</span>
+          <span class="brand-tag">coloful puzzle game</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="page-header-content">
+        <p class="eyebrow">How I built it</p>
+        <h1>Documentation Overview</h1>
+        <p class="page-lede">Explore the design, architecture, and development process behind Phở Logic.</p>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="documentation-section intro-section" id="introduction">
+      <div class="section-header">
+        <h2>Introduction</h2>
+        <p class="section-tag">Overview and context</p>
+      </div>
+      <div class="section-content intro-content">
+        <div class="intro-logo">
+          <img src="images/menu_logo.png" alt="Phở Logic logo" />
+        </div>
+        <div class="intro-text">
+          <p>
+            The idea of Phở Logic comes from the desire to promote Vietnamese culture through video games. As the country is well known through its local cuisines internationally, leveraging this acknowledgement I decided to make a draft version to test out whether the idea would work.
+          </p>
+          <p>
+            Furthermore, it is a good way to learn coding, game design, plus the video game and tech industry. It was a long process, but finally I finished a demo version (and learned many hardcore lessons)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Art & Design Section -->
+    <section class="documentation-section" id="art-design">
+      <div class="section-header">
+          <!-- Art & Design content -->
+        <h2>Art & Design</h2>
+        <p class="section-tag">Visual identity, sprite creation, animation</p>
+      </div>
+      <div class="section-content">
+        <h3>Design Tools & Workflow</h3>
+        <p>
+          Because I wanted to save time (LOL I always have a temper 😄), subscribing to Adobe Cloud Creative turned out to be the best choice. There are no other viable options if you love designing—especially if you want to do it from scratch. If you're a student, Adobe Cloud Creative has the best subscription plans available. From mid-December till mid-February (Lunar New Year), it costs roughly <strong>$50</strong> for the subscription. That's an incredible deal.
+        </p>
+
+        <h3>Sprite Design Best Practices</h3>
+        <p>
+          The design part wasn't really difficult (thank goodness for the AI revolution). For sprites, applying best practice would be using <strong>256x256 px clean sprites as PNG with clear transparent backgrounds</strong>. However, since I wanted to deliver the best result, I made the decision to set sprite sizes at <strong>1024x1024 px</strong> (I wish someone had warned me about this beforehand!). I kept particle designs at <strong>256x256 px</strong> though—that was a good choice and highly recommended.
+        </p>
+
+        <h3>AI-Assisted Creation with Firefly</h3>
+        <p>
+          If you have enough generative AI credits with Firefly, utilize it through the generous <strong>Generative Fill function</strong>. It's the best option right now to rapidly design art and ship prototypes. All you have to do is:
+        </p>
+        <ol>
+          <li>Draw the shape or rough outline</li>
+          <li>Sketch out your ideas on paper</li>
+          <li>Use generative fill to visualize your prompt</li>
+          <li>Refine the ideas later to meet your needs</li>
+        </ol>
+
+        
+        <p>
+          The game consists of <strong>6 normal tiles</strong>, <strong>5 special power-ups</strong>, and various <strong>particle effects</strong>:
+        </p>
+
+        <div class="asset-breakdown">
+          <div class="asset-category">
+            <h4>Normal Tiles (6)</h4>
+            <p>Bánh Mì 🥖, Bánh Xèo 🥞, Cà Phê Trứng ☕, Gỏi Cuốn 🌯, Phở Bowl 🍜, and Rau Muống 🥬. These form the core interactable elements of the game, each representing different Vietnamese culinary icons.</p>
+          </div>
+
+          <div class="asset-category">
+            <h4>Special Power-Ups (5)</h4>
+            <p>Party Popper (Vertical), Party Popper (Horizontal), Firecracker, Sticky Rice Bomb (5-color variant), and Dragon Fly. These special abilities are triggered when players make strategic matches and provide powerful cascade effects to clear larger areas of the board.</p>
+          </div>
+
+          <div class="asset-category">
+            <h4>Particle Effects</h4>
+            <p>Various burst particles activated when matching and clearing tiles, creating popping effects and visual feedback. Particles include bread crumbs, glass shards, soup splashes, sparkles, shrimp leaves, and more—each tied to the gameplay mechanic of satisfying tile elimination.</p>
+          </div>
+        </div>
+
+        <h3>Asset Gallery</h3>
+        <p>Art designs are displayed below:</p>
+        
+        <div class="image-gallery">
+          <div class="gallery-grid">
+            <!-- Normal Tiles -->
+            <div class="gallery-card" data-index="0">
+              <div class="gallery-card-image">
+                <img src="images/pho_bowl.png" alt="Phở Bowl" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Phở Bowl</h4>
+                <p class="card-type">Normal Tile</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="1">
+              <div class="gallery-card-image">
+                <img src="images/banh_mi.png" alt="Bánh Mì" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Bánh Mì</h4>
+                <p class="card-type">Normal Tile</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="2">
+              <div class="gallery-card-image">
+                <img src="images/banh_xeo.png" alt="Bánh Xèo" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Bánh Xèo</h4>
+                <p class="card-type">Normal Tile</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="3">
+              <div class="gallery-card-image">
+                <img src="images/ca_phe_trung.png" alt="Cà Phê Trứng" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Cà Phê Trứng</h4>
+                <p class="card-type">Normal Tile</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="4">
+              <div class="gallery-card-image">
+                <img src="images/goi_cuon.png" alt="Gỏi Cuốn" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Gỏi Cuốn</h4>
+                <p class="card-type">Normal Tile</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="5">
+              <div class="gallery-card-image">
+                <img src="images/rau_muong.png" alt="Rau Muống" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Rau Muống</h4>
+                <p class="card-type">Normal Tile</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <!-- Special Power-Ups -->
+            <div class="gallery-card" data-index="6">
+              <div class="gallery-card-image">
+                <img src="images/party_popper_vertical.png" alt="Party Popper Vertical" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Party Popper</h4>
+                <p class="card-type">Special Power-Up (Vertical)</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="7">
+              <div class="gallery-card-image">
+                <img src="images/party_popper_horizontal.png" alt="Party Popper Horizontal" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Party Popper</h4>
+                <p class="card-type">Special Power-Up (Horizontal)</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="8">
+              <div class="gallery-card-image">
+                <img src="images/firecracker.png" alt="Firecracker" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Firecracker</h4>
+                <p class="card-type">Special Power-Up</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="9">
+              <div class="gallery-card-image">
+                <img src="images/sticky_rice_bomb.png" alt="Sticky Rice Bomb" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Sticky Rice Bomb</h4>
+                <p class="card-type">Special Power-Up (5-color)</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="10">
+              <div class="gallery-card-image">
+                <img src="images/dragon_fly.png" alt="Dragon Fly" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Dragon Fly</h4>
+                <p class="card-type">Special Power-Up</p>
+                <p class="card-size">1024×1024 px</p>
+              </div>
+            </div>
+
+            <!-- Particle Effects -->
+            <div class="gallery-card" data-index="11">
+              <div class="gallery-card-image">
+                <img src="images/bread_crumbs_particle.png" alt="Bread Crumbs Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Bread Crumbs</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="12">
+              <div class="gallery-card-image">
+                <img src="images/firecracker_particle.png" alt="Firecracker Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Firecracker</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="13">
+              <div class="gallery-card-image">
+                <img src="images/fried_crumb_particle.png" alt="Fried Crumb Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Fried Crumb</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="14">
+              <div class="gallery-card-image">
+                <img src="images/glass_particle.png" alt="Glass Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Glass Shards</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="15">
+              <div class="gallery-card-image">
+                <img src="images/party_popper_projectile.png" alt="Party Popper Projectile" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Party Popper Projectile</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="16">
+              <div class="gallery-card-image">
+                <img src="images/rau_muong_particle.png" alt="Rau Muống Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Rau Muống</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="17">
+              <div class="gallery-card-image">
+                <img src="images/scooter_particle_1.png" alt="Scooter Particle 1" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Scooter Particle 1</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="18">
+              <div class="gallery-card-image">
+                <img src="images/scooter_particle_2.png" alt="Scooter Particle 2" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Scooter Particle 2</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="19">
+              <div class="gallery-card-image">
+                <img src="images/shrimp_leaf_particle.png" alt="Shrimp Leaf Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Shrimp Leaf</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="20">
+              <div class="gallery-card-image">
+                <img src="images/soup_splash_particle.png" alt="Soup Splash Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Soup Splash</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+
+            <div class="gallery-card" data-index="21">
+              <div class="gallery-card-image">
+                <img src="images/sparkle_particle.png" alt="Sparkle Particle" />
+              </div>
+              <div class="gallery-card-overlay">
+                <h4>Sparkle</h4>
+                <p class="card-type">Particle Effect</p>
+                <p class="card-size">256×256 px</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <h3>Blocker</h3>
+        <p>
+          For a finishing touch on the final levels, I added the "scooter" as a blocking element into the game. It may seem a bit ironic at first, but personally I think it perfectly matches the cultural vibe. There's something quintessentially Vietnamese about the traffic and sidewalks filled with parked mopeds, bikes, and EV scooters—it's an iconic piece of modern urban life that felt right to include.
+        </p>
+        <p>
+          The scooter tile blocker creates an additional layer of challenge in late-game levels, forcing players to think strategically about board navigation and match planning.
+        </p>
+
+        <div class="blocker-showcase">
+          <div class="blocker-tile">
+            <img src="images/scooter_tile_blocker.png" alt="Scooter Tile Blocker" />
+            <p><strong>Scooter Tile Blocker</strong><br />1024×1024 px</p>
+          </div>
+        </div>
+
+        <!-- Gameplay showcase (placed after blocker showcase) -->
+        <h3>Gameplay Screen Design</h3>
+        <p>
+          For the design of the gameplay screen, I first designed two panels as top and bottom HUDs using the same method—draw the shape and apply generative fill. These HUD elements are used to display the game moves counter, game objective, and bonus power-ups.
+        </p>
+        <p>
+          The background is static and consists of a simple bamboo background designed at 1080p. In fact, all elements that make up the gameplay are designed at 1080p. Later on you'll see that they are implemented using JSON files for responsive layout management.
+        </p>
+        <p>
+          The gameplay interface consists of carefully designed UI elements that create an immersive Vietnamese-themed experience.
+        </p>
+
+        <div class="gameplay-showcase">
+          <!-- Featured central gameplay screenshot -->
+          <div class="gameplay-featured">
+            <img src="gameplay/gameplay.png" alt="Complete Gameplay Screen" />
+            <p><strong>Complete Gameplay Screen</strong><br />1080×1920 px<br />Full game interface preview</p>
+          </div>
+
+          <!-- Surrounding UI elements -->
+          <div class="gameplay-surround">
+            <div class="gameplay-element">
+              <img src="gameplay/top_hud.png" alt="Top HUD Panel" />
+              <p><strong>Top HUD Panel</strong><br />1080×300 px<br />Moves counter & objectives</p>
+            </div>
+            <div class="gameplay-element">
+              <img src="gameplay/bottom_hud.png" alt="Bottom HUD Panel" />
+              <p><strong>Bottom HUD Panel</strong><br />1080×300 px<br />Bonus power-ups & controls</p>
+            </div>
+            <div class="gameplay-element">
+              <img src="gameplay/board.png" alt="Game Board Frame" />
+              <p><strong>Game Board Frame</strong><br />1080×1500 px<br />Tile grid container</p>
+            </div>
+            <div class="gameplay-element">
+              <img src="gameplay/screen_bg_1.png" alt="Screen Background" />
+              <p><strong>Screen Background</strong><br />1080×1920 px<br />Bamboo themed backdrop</p>
+            </div>
+            <div class="gameplay-element">
+              <img src="gameplay/pause_button.png" alt="Pause Button" />
+              <p><strong>Pause Button</strong><br />120×120 px<br />Game pause control</p>
+            </div>
+            <div class="gameplay-element">
+              <img src="gameplay/lotus.png" alt="Lotus Decoration" />
+              <p><strong>Lotus Decoration</strong><br />200×200 px<br />Vietnamese cultural element</p>
+            </div>
+            <div class="gameplay-element">
+              <img src="gameplay/lucky_cat.png" alt="Lucky Cat" />
+              <p><strong>Lucky Cat</strong><br />150×150 px<br />Fortune bringing mascot</p>
+            </div>
+          </div>
+        </div>
+
+          <h3>World Screen Showcase</h3>
+          <p>
+            The world screens are designed using a 1080p (1080 × 1920) base resolution to ensure consistent layout scaling and visual alignment across devices.
+          </p>
+          <p>
+            A decorative bamboo element is animated using a subtle swing effect. This is achieved by continuously rotating the object slightly back and forth along its axis in a loop. The motion simulates natural wind movement, adding life and environmental atmosphere to the scene.
+          </p>
+          <p>
+            A similar looping animation is applied to the cloud elements. Instead of rotation, their X-position is gradually incremented over time and reset once off-screen. This creates the illusion of clouds drifting across the sky, reinforcing the feeling of gentle wind flow and environmental depth.
+          </p>
+          <p>
+            Together, these lightweight animations enhance immersion without introducing heavy performance overhead.
+          </p>
+
+          <div class="gameplay-showcase world-showcase">
+            <div class="gameplay-featured">
+              <img src="world_screen/world_finish.png" alt="World Finish Screen" />
+              <p><strong>World Finish Screen</strong><br />1080×1920 px<br />Main world/map screen</p>
+            </div>
+
+            <div class="gameplay-surround">
+              <div class="gameplay-element">
+                <img src="world_screen/world_001_bg.png" alt="World Background" />
+                <p><strong>World Background</strong><br />1080×1920 px</p>
+              </div>
+              <div class="gameplay-element">
+                <img src="world_screen/bamboo.png" alt="Bamboo Decoration" />
+                <p><strong>Bamboo</strong><br />Decorative element</p>
+              </div>
+              <div class="gameplay-element">
+                <img src="world_screen/cloud_1.png" alt="Cloud 1" />
+                <p><strong>Cloud 1</strong><br />Sky element</p>
+              </div>
+              <div class="gameplay-element">
+                <img src="world_screen/cloud_2.png" alt="Cloud 2" />
+                <p><strong>Cloud 2</strong><br />Sky element</p>
+              </div>
+              <div class="gameplay-element">
+                <img src="world_screen/cloud_3.png" alt="Cloud 3" />
+                <p><strong>Cloud 3</strong><br />Sky element</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    <!-- Technology Stack Section -->
+    <section class="documentation-section" id="technology-stack">
+      <div class="section-header">
+        <h2>Tech Stack</h2>
+        <p class="section-tag">Languages, frameworks, and tools</p>
+      </div>
+      <div class="section-content">
+        <h3>Flutter Framework</h3>
+        <p>
+          Speaking of technologies, the framework used is Flutter. Flutter is Google's UI framework, and it is very versatile. Using Dart, you can publish to Android, iOS, and Windows/macOS/Linux from one codebase. Flutter separates UI, data, and logic, which keeps the flow simple (cause to effect). Designing interfaces in Flutter can feel similar to HTML5, but in a more app-style, JavaScript-like approach.
+        </p>
+
+        <div class="documentation-logo-showcase">
+          <div class="documentation-logo">
+            <img src="images/flutter_logo.png" alt="Flutter Logo" />
+            <p><strong>Flutter</strong><br />Google's UI Framework</p>
+          </div>
+        </div>
+
+        <p>
+          On top of Flutter, I use the Flame library (<a href="https://docs.flame-engine.org/latest/" target="_blank" rel="noopener">https://docs.flame-engine.org/latest/</a>). Flame is a lightweight 2D game engine that makes it easy to build quick prototypes. It reminds me of when Flappy Bird shook the Vietnamese game market—the developer used Cocos2d. With Flame, I can build a prototype at a similar quality level. It is not ideal for large-scale projects, but it integrates smoothly with Flutter and simplifies 2D game development.
+        </p>
+
+        <div class="documentation-logo-showcase">
+          <div class="documentation-logo">
+            <img src="images/flame_logo.png" alt="Flame Engine Logo" />
+            <p><strong>Flame Engine</strong><br />2D Game Engine for Flutter</p>
+          </div>
+        </div>
+
+        <h3>AI-Assisted Development</h3>
+        <p>
+          Of course, if you want speed, you'll have to use a coding AI. This is the fun part—there are so many on the market right now. After testing several, GitHub Copilot and Cursor are the ones I would recommend. These companies also offer good discounts for students. I chose GitHub Copilot in the end; it brings the best results. The cost is $10 per month, so that's $20 for 2 months. A good deal for a game prototype!!!
+        </p>
+
+        <p>
+          Using Flutter for UI implementation and Flame for game rendering, the main technologies have been decided. However, I still need a way to monitor engagement. The best approach is to implement Google AdMob monetization and link it with Firebase Analytics. That way, I can see whether users actually play the game—for example, by checking if they use the free-boost panel to claim free items.
+        </p>
+
+        <p>
+          For UX, I did not include banner ads or long interstitial ads. Instead, an optional feedback section is integrated into Settings for users who want to share feedback (or to vent 😂). I used Google Forms because it's a simple and effective way to collect opinions. No personal information or compulsory questions are included, and users are warned not to share personal information. Applying what I learned in computing school, I avoided leading questions and made sure the questions are clear and easy to answer.
+        </p>
+
+        <h3>Key Technologies Summary</h3>
+        <div class="documentation-stack-grid">
+          <div class="documentation-item">
+            <h4>Language</h4>
+            <p>Dart</p>
+          </div>
+          <div class="documentation-item">
+            <h4>Framework</h4>
+            <p>Flutter (Google)</p>
+          </div>
+          <div class="documentation-item">
+            <h4>Game Engine</h4>
+            <p>Flame 2D Engine</p>
+          </div>
+          <div class="documentation-item">
+            <h4>Platforms</h4>
+            <p>Android, iOS, Web, Desktop</p>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </section>
+
+    <!-- Game Design & Architecture Section -->
+    <section class="documentation-section" id="game-design">
+      <div class="section-header">
+        <h2>Game Design & Architecture</h2>
+        <p class="section-tag">Mechanics, code structure, and development process</p>
+      </div>
+      <div class="section-content">
+        <p>
+          Here comes the hard part. For the sake of comprehension, I won't go into the detailed code. The source code will be uploaded to Git if anyone's interested—you can view it there. But here's the organization; I know it looks crazy.
+        </p>
+
+        <div class="architecture-diagrams">
+          <img src="images/organization_1.png" alt="Code Organization Diagram 1" title="Main game structure and component hierarchy" />
+          <img src="images/organization_2.png" alt="Code Organization Diagram 2" title="State management and data flow" />
+          <img src="images/organization_3.png" alt="Code Organization Diagram 3" title="UI components and rendering pipeline" />
+          <img src="images/organization_4.png" alt="Code Organization Diagram 4" title="Asset loading and game loop" />
+        </div>
+
+        <p>
+          The basics of Flutter application development—I won't go into those details. <code>app.dart</code>, <code>main.dart</code>, <code>routes.dart</code> are basic files that are required for basic application development. <code>main.dart</code> starts the app (this is also where you run the application, call any necessary SDKs such as Google Ads, and initialize any async operations), <code>app.dart</code> wraps around the build, and <code>routes.dart</code> is where you set up the navigations of the app.
+        </p>
+
+        <p>
+          On top of the executive files, I also used many different helper functions which are then organized into <code>app_logger.dart</code>, <code>json_helpers.dart</code>, <code>animation_helpers.dart</code>. <code>app_logger.dart</code> contains lots of debug functions that print what is happening as the game renders to the console. For the other two, if you understand programming you must have figured out—they are helper functions for animation calling and JSON reader calling (they are just defined in separate Dart files for organization purposes).
+        </p>
+
+        <h3>Project Organization Overview</h3>
+        <pre><code>lib/
+├── main.dart                    # App entry point
+├── ads/                         # Ad integration (Google AdMob)
+└── src/
+    ├── app/                     # App-level setup (MaterialApp, routes)
+    ├── audio/                   # Sound effects & background music
+    ├── game/                    # Core game logic (match-3 engine)
+    │   ├── board/              # Visual rendering (Flame components)
+    │   ├── model/              # Data structures (Grid, Cells, Coords)
+    │   ├── stages/             # Level definitions & loading
+    │   ├── inventory/          # Player's boosters/power-ups
+    │   ├── vfx/                # Visual effects (particles, animations)
+    │   └── utils/              # Helpers (logging, random picking)
+    ├── screens/                # UI screens (menu, level select, gameplay)
+    ├── widgets/                # Reusable UI components
+    └── utils/                  # General utilities</code></pre>
+
+        <p>
+          The reason the game architecture is so complicated is because (
+          ), I wanted to create a fully functional MVP. Flame and Flutter programming follow a strict cause-and-effect model, requiring numerous functions and managers (
+          ). We'll dive into the most important parts: <code>board_game.dart</code> and <code>board_controller.dart</code>. Think of them as: 1) the main board (the graphics), and 2) the printed circuit (0s and 1s sending signals to control the mainboard). In this case, they're executing fiber optic functions and calling managers to control the game on <code>board_game.dart</code>.
+        </p>
+
+        <h3>JSON-Driven UI Design</h3>
+        <p>
+          For convenience, I implemented separate JSON designs. Screens such as the menu, gameplay, and level select define their visual structure in JSON files (<code>gameplay_1.json</code>, <code>world_screen_1.json</code>, etc.). Each JSON specifies background images, element positions, sizes, and layout metadata. Take a look at the snippet from <code>gameplay_1.json</code> below:
+        </p>
+
+        <div class="code-block">
+          <pre><code class="language-json">{
+  "type": "container",
+  "id": "board_frame",
+  "file": "assets/boards/frames/board.png",
+  "position": { "x": 540, "y": 960 },
+  "size": { "w": 1080, "h": 1500 },
+  "innerOffset": { "x": 0, "y": 80 },
+  "anchor": "center"
+},
+{
+  "type": "image",
+  "id": "bottom_hud",
+  "file": "assets/boards/frames/bottom_hud.png",
+  "position": { "x": 540, "y": 1825 },
+  "size": { "w": 1080, "h": 241 },
+  "anchor": "center"
+}</code></pre>
+        </div>
+
+        <p>
+          As you can see, the size and position of the board and bottom_hud are specified using x and y axes, based on the edges of the screen. Using this method makes scaling and level design much easier. I personally attempted to "vibe code" layouts using media queries and different mathematical functions, but this approach kept breaking across devices. The most reliable solution I found was to use JSON-driven design.
+        </p>
+
+        <p>
+          One of the good thing when you are studying data science is that, you know the basic of JSON 🤣. I may not be good at coding, Copilot is way better than me, but i can comprehend JSON structure enough to turn all JSON design into the kind of metadata needed for the app to understand specific coordinate of where each data should be. The application parses this JSON data using <code>stage_data.dart</code>, allowing screens to be designed as if targeting a fixed 1080×1920 resolution. As long as the original design is kept at 1080p, layout consistency can be maintained while scaling responsively at runtime. Copilot can then generate the appropriate coordinate-scaling logic, making responsiveness easier to implement without constantly reworking layouts.
+        </p>
+
+        <h3>Game Architecture Overview</h3>
+        <p>
+          In terms of programming architecture, Flutter handles the game UI and HUDs, while the Flame engine is responsible for board rendering and animation. The <code>BoardController</code> handles core game rules such as swap validation, match detection, gravity, refills, and cascades, and calls necessary systems like <code>SpecialTileSpawner</code> and <code>SpecialActivationResolver</code>. Conceptually, this acts as the central processing unit of the game logic (not literally).
+        </p>
+
+        <p>
+          The <code>BoardController</code> orchestrates the full match-3 gameplay loop. It validates whether tiles can be swapped, scans the grid for valid matches, analyzes match patterns to determine when special tiles should be spawned, clears matched tiles and blockers, applies gravity to fill empty cells, refills the board with new tiles, and repeatedly resolves cascades until the board reaches a stable state. Once the turn is complete, it decrements the remaining moves and checks win or lose conditions.
+        </p>
+
+        <p>
+          All animations, including tile movement and particle effects, are handled using Flame's <code>MoveEffect</code> system and custom VFX components, which will be discussed next.
+        </p>
+      </div>
+    </section>
+
+    <!-- Animation Section -->
+    <section class="documentation-section" id="animation">
+      <div class="section-header">
+        <h2>Animation</h2>
+        <p class="section-tag">EffectController vs sprite sheets, Flame effects implementation</p>
+      </div>
+      <div class="section-content">
+        <h3>Animation Approaches</h3>
+        <p>
+          For animations, you have 2 choices: utilize Flame Engine's built-in <code>EffectController</code> or create sprite sheet animations. The second method requires knowledge of animation tools such as Adobe After Effects or Rive, etc. These tools can be used to create animations and then export them to Lottie, Riv, or sprite sequences that can be merged into sprite sheets.
+        </p>
+        <p>
+          However, since I'm not skilled at animation, I decided to use Flame's EffectController. Ordinary animations are easy to implement—match, spawn burst, and then just link them to the prepared <code>particles.png</code>.
+        </p>
+
+        <h3>Flame Effects for Special Powers</h3>
+        <p>
+          Flame effects were specifically used for the following in-game powers:
+        </p>
+
+        <table class="animation-table">
+          <thead>
+            <tr>
+              <th>Special Power</th>
+              <th>Effect Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dragon Fly</td>
+              <td>Fly to a random tile type swapped with</td>
+            </tr>
+            <tr>
+              <td>Party Popper Horizontal</td>
+              <td>Clear Horizontal</td>
+            </tr>
+            <tr>
+              <td>Party Popper Vertical</td>
+              <td>Clear Vertical</td>
+            </tr>
+            <tr>
+              <td>Firecracker</td>
+              <td>Like a dynamite bomb but use a big TET particle</td>
+            </tr>
+            <tr>
+              <td>Sticky Rice Bomb</td>
+              <td>Clear all same tile swapped with</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="table-to-gifs-arrow">
+          <span>↓</span>
+          <p>Actual animations in action</p>
+        </div>
+
+        <div class="animation-gifs-grid">
+          <div class="animation-gif-card">
+            <div class="animation-gif-image">
+              <img src="gif/firecracker.gif" alt="Firecracker Animation" />
+            </div>
+            <div class="animation-gif-overlay">
+              <h4>Firecracker</h4>
+              <p class="gif-description">Dynamite bomb effect with big TET particle</p>
+            </div>
+          </div>
+
+          <div class="animation-gif-card">
+            <div class="animation-gif-image">
+              <img src="gif/horizontal_party_popper.gif" alt="Horizontal Party Popper Animation" />
+            </div>
+            <div class="animation-gif-overlay">
+              <h4>Party Popper Horizontal</h4>
+              <p class="gif-description">Clears entire horizontal row</p>
+            </div>
+          </div>
+
+          <div class="animation-gif-card">
+            <div class="animation-gif-image">
+              <img src="gif/vertical_party_popper.gif" alt="Vertical Party Popper Animation" />
+            </div>
+            <div class="animation-gif-overlay">
+              <h4>Party Popper Vertical</h4>
+              <p class="gif-description">Clears entire vertical column</p>
+            </div>
+          </div>
+
+          <div class="animation-gif-card">
+            <div class="animation-gif-image">
+              <img src="gif/sticky_rice_bomb.gif" alt="Sticky Rice Bomb Animation" />
+            </div>
+            <div class="animation-gif-overlay">
+              <h4>Sticky Rice Bomb</h4>
+              <p class="gif-description">Clears all tiles of the same type</p>
+            </div>
+          </div>
+
+          <div class="animation-gif-card">
+            <div class="animation-gif-image">
+              <img src="gif/blocker.gif" alt="Blocker Animation" />
+            </div>
+            <div class="animation-gif-overlay">
+              <h4>Scooter Blocker</h4>
+              <p class="gif-description">Obstacles that must be cleared</p>
+            </div>
+          </div>
+
+          <div class="animation-gif-card">
+            <div class="animation-gif-image">
+              <img src="gif/dragon_fly.gif" alt="Dragon Fly Animation" />
+            </div>
+            <div class="animation-gif-overlay">
+              <h4>Dragon Fly</h4>
+              <p class="gif-description">Fly to a random tile type swapped with</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="animation-note">
+          Here are the animations after implementation. These were made purely with Move Effects, Rotate Effects, Color Effects...etc.
+        </p>
+      </div>
+    </section>
+
+      <!-- Sound Effects & Background Music (moved here, under Animation) -->
+      <section class="documentation-section" id="audio">
+        <div class="section-header">
+          <h2>Sound Effects & Background Music</h2>
+          <p class="section-tag">SFX, BGM sources and implementation notes</p>
+        </div>
+        <div class="section-content">
+          <p>
+            For prototyping I used royalty-free SFX and BGM from community audio libraries (Pixarbay to be exact). These sites provide many usable tracks and sound effects, but you should always verify the specific license for each file before publishing. For this project I avoided redistribution of third-party assets and only embedded the music in the project in compliance with PixarBay License. 
+          </p>
+          </p>
+          <div class="audio-player">
+            <p><strong>Try it:</strong> click any player below to play the audio.</p>
+            <div id="sfx-list" class="sfx-list"></div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Limitations Section -->
+    <section class="documentation-section limitations-section" id="limitations">
+      <div class="section-header">
+        <h2>Limitations & Reflections</h2>
+        <p class="section-tag">Challenges, trade-offs, and what I'd do differently</p>
+      </div>
+      <div class="section-content">
+        <p>
+          Building this app came with several limitations. As a junior solo developer working under time pressure, I prioritized shipping core features over deeper polishing and optimization.
+        </p>
+
+        <h3>1) Performance Optimization</h3>
+        <p>
+          The game is not fully optimized yet. Right now it redraws sprites every frame in a straightforward but inefficient way, which can reduce performance. A better approach would be sprite batching: packing assets into a single sprite sheet and rendering them with fewer draw calls, so the board controller can pull sprites from one atlas and reduce overhead.
+        </p>
+
+        <h3>2) Asset Size Efficiency</h3>
+        <p>
+          My art assets are oversized for this genre. Tile assets should typically be around 64 to 128 pixels for this style of game, which would reduce memory usage and improve rendering speed across devices.
+        </p>
+
+        <h3>3) Engine Fit and Development Focus</h3>
+        <p>
+          I likely chose the wrong engine for my long-term goals. Flame was approachable and fast for prototyping, but it may not be robust enough to deliver the level of polish and impact I am aiming for. Because of that, I also spent too much time trying to fully understand every detail of the code instead of maintaining momentum and focusing on high-level architecture, which is where vibe coding works best when an engine has stronger built-in support.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+      <div class="footer-content">
+      <div>
+        <h2>Phở Logic</h2>
+        <p>&copy; 2026 CuongTModwork. All rights reserved.</p>
+      </div>
+      <p class="footer-note">For support, contact us through the Google Play Store listing.</p>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/documentation.js"></script>
+</body>
+</html>

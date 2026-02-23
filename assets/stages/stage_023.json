@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "stageId": 23,
+  "stageKey": "stage_023",
+  "name": "Stage 023 — Fortress Walls",
+  "difficulty": "hard",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+    "shape": {
+      "type": "mask",
+      "notes": "Full board with vertical blocker walls. 1 = cell exists, 0 = void.",
+      "mask": [
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 16 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 16 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 16 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 16 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 18 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 18 }
+  ],
+
+  "blockerTypes": [
+    {
+      "id": -2,
+      "name": "scooter_tile_blocker",
+      "file": "assets/sprites/tile_blocker/scooter_tile_blocker.png",
+      "clearedBy": "adjacent_regular_match_only"
+    }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = void; -2 = scooter_tile_blocker. Two vertical walls of blockers divide board into 3 sections.",
+    "cells": [
+      [0,0,-2,0,0,-2,0],
+      [0,0,-2,0,0,-2,0],
+      [0,0,-2,0,0,-2,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,-2,0,0,-2,0],
+      [0,0,-2,0,0,-2,0],
+      [0,0,-2,0,0,-2,0]
+    ]
+  },
+
+  "moves": 26,
+
+  "objectives": [
+    { "type": "collect", "tileId": 3, "target": 22 },
+    { "type": "collect", "tileId": 5, "target": 18 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 023: Fortress Walls - two vertical walls of blockers (12 total) divide board into 3 lanes. Middle rows are gap for cross-lane play. Break walls to access all sections."
+  }
+}

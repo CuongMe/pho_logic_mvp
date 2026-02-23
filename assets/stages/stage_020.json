@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "stageId": 20,
+  "stageKey": "stage_020",
+  "name": "Stage 020",
+  "difficulty": "very_hard",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+    "placement": { "anchor": "center", "offset": { "x": 0, "y": 0 } },
+    "shape": {
+      "type": "mask",
+      "notes": "Narrow vertical arena (center 3 columns) with small side bumps. High constraint finale.",
+      "mask": [
+        [0,0,1,1,1,0,0],
+        [0,1,1,1,1,1,0],
+        [0,0,1,1,1,0,0],
+        [0,0,1,1,1,0,0],
+        [0,0,1,1,1,0,0],
+        [0,0,1,1,1,0,0],
+        [0,1,1,1,1,1,0],
+        [0,0,1,1,1,0,0]
+      ]
+    }
+  },
+
+  "spawnRules": { "allowInitialMatches": false },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 19 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 13 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 19 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 12 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 19 }
+  ],
+
+  "bedTypes": [
+    { "id": 0, "name": "default", "file": "assets/boards/beds/tile_bed_default.png", "destructible": false, "hp": 0 }
+  ],
+
+  "bedMap": [
+    [-1,-1,0,0,0,-1,-1],
+    [-1,0,0,0,0,0,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,0,0,0,0,0,-1],
+    [-1,-1,0,0,0,-1,-1]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = void. Matches mask exactly.",
+    "cells": [
+      [-1,-1,0,0,0,-1,-1],
+      [-1,0,0,0,0,0,-1],
+      [-1,-1,0,0,0,-1,-1],
+      [-1,-1,0,0,0,-1,-1],
+      [-1,-1,0,0,0,-1,-1],
+      [-1,-1,0,0,0,-1,-1],
+      [-1,0,0,0,0,0,-1],
+      [-1,-1,0,0,0,-1,-1]
+    ]
+  },
+
+  "moves": 15,
+
+  "objectives": [
+    { "type": "collect", "tileId": 1, "target": 24 },
+    { "type": "collect", "tileId": 3, "target": 14 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 020: finale board—tight play area, fewer easy combos, punishes waste. Good capstone for World 1."
+  }
+}

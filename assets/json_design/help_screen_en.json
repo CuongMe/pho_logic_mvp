@@ -1,0 +1,228 @@
+﻿{
+    "schemaVersion":  1,
+    "screen":  "help",
+    "language":  "en",
+    "title":  "How to Play",
+    "frameImage":  "assets/ui/menu/pause_scroll.png",
+    "ui":  {
+               "panelWidthFactor":  0.99,
+               "panelMaxWidth":  950,
+               "panelHeightFactor":  0.96,
+               "frameInsets":  {
+                                   "leftFactor":  0.18,
+                                   "rightFactor":  0.18,
+                                   "topFactor":  0.14,
+                                   "bottomFactor":  0.12,
+                                   "minLeft":  40,
+                                   "minRight":  40,
+                                   "minTop":  36,
+                                   "minBottom":  28
+                               },
+               "contentBox":  {
+                                  "backgroundColorHex":  "#FFF6E8",
+                                  "backgroundOpacity":  0.82,
+                                  "borderColorHex":  "#A36A3A",
+                                  "borderWidth":  2,
+                                  "borderRadius":  12,
+                                  "padding":  14,
+                                  "scrollRightPadding":  10,
+                                  "scrollbar":  {
+                                                    "thumbVisibility":  true,
+                                                    "thickness":  6,
+                                                    "radius":  3
+                                                }
+                              },
+               "button":  {
+                              "text":  "Got It!",
+                              "widthFactor":  0.50,
+                              "heightClamp":  {
+                                                  "min":  40,
+                                                  "max":  56
+                                              },
+                              "backgroundColorHex":  "#6D3F1F",
+                              "radius":  12,
+                              "elevation":  4
+                          }
+           },
+    "sections":  [
+                     {
+                         "header":  "ðŸ§§ Game Tiles",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "The game features Vietnamese Tet and food icons. Your goal is to match identical tiles to collect points."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  64,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/banh_mi.png",
+                                                              "label":  "Banh Mi",
+                                                              "text":  "Popular Vietnamese breakfast"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/banh_xeo.png",
+                                                              "label":  "Banh Xeo",
+                                                              "text":  "Delicious Southern Vietnamese pancake"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/ca_phe_trung.png",
+                                                              "label":  "Egg Coffee",
+                                                              "text":  "Hanoi\u0027s specialty coffee"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/goi_cuon.png",
+                                                              "label":  "Spring Rolls",
+                                                              "text":  "Refreshing light snack"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/pho_bowl.png",
+                                                              "label":  "Pho",
+                                                              "text":  "Vietnam\u0027s national dish"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/rau_muong.png",
+                                                              "label":  "Water Spinach",
+                                                              "text":  "Familiar green vegetable"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ¯ Objective",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Match 3 or more identical tiles to collect them. Complete the level objective before running out of moves!"
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸ”„ How to Play",
+                         "blocks":  [
+                                        {
+                                            "type":  "bullets",
+                                            "items":  [
+                                                          "Tap and drag to swap two adjacent tiles",
+                                                          "Match 3+ tiles horizontally or vertically",
+                                                          "New tiles will fall from the top",
+                                                          "Create combos to earn special power-ups"
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "âš¡ Special Power-Ups",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Power-ups help you clear difficult levels. Create them by making special matches or get them free from \"Free Boost\"."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  40,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/firecracker.png",
+                                                              "label":  "Firecracker",
+                                                              "text":  "Explodes and destroys tiles in a 3x3 area"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/party_popper_horizontal.png",
+                                                              "label":  "Party Popper (H)",
+                                                              "text":  "Clears an entire horizontal row"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/party_popper_vertical.png",
+                                                              "label":  "Party Popper (V)",
+                                                              "text":  "Clears an entire vertical column"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/sticky_rice_bomb.png",
+                                                              "label":  "Sticky Rice Bomb",
+                                                              "text":  "Destroys multiple matching tiles on the board"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/dragon_fly.png",
+                                                              "label":  "Dragonfly",
+                                                              "text":  "Flies to and destroys the nearest matching tile"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸ›µ Scooter Blocker",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Scooters only appear in levels 21-25. In any level with scooters, you must clear all scooters to win. Scooters can only be cleared by matching normal tiles next to them, or by automatic matches during cascades. When a scooter moves, it has a reasonâ€”it\u0027s pulling the cart or bÃ¡nh chÆ°ng."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  40,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/tile_blocker/scooter_tile_blocker.png",
+                                                              "label":  "Scooter",
+                                                              "text":  "Only breaks from adjacent normal matches or cascades"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/particles/scooter_particle_1.png",
+                                                              "label":  "Debris",
+                                                              "text":  "Break particles when a scooter is cleared"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/particles/scooter_particle_2.png",
+                                                              "label":  "Debris",
+                                                              "text":  "Additional break particles"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ† Important Note",
+                         "blocks":  [
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  40,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/firecracker.png",
+                                                              "label":  "Firecracker Warning",
+                                                              "text":  "Firecracker can destroy other power-ups in its blast radius. Use it carefully to avoid losing valuable power-ups!"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ Free Boost \u0026 Rewards",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Tap \"Free Boost\" to watch an ad and get free power-ups. This is a way to support the developer!"
+                                        },
+                                        {
+                                            "type":  "bullets",
+                                            "items":  [
+                                                          "Watch ads to get free power-ups",
+                                                          "Use power-ups when facing difficult levels",
+                                                          "If you like the game, please leave a 5-star review â­"
+                                                      ]
+                                        }
+                                    ]
+                     }
+                 ]
+}

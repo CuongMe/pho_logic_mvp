@@ -1,0 +1,228 @@
+﻿{
+    "schemaVersion":  1,
+    "screen":  "help",
+    "language":  "vi",
+    "title":  "HÆ°á»›ng Dáº«n ChÆ¡i",
+    "frameImage":  "assets/ui/menu/pause_scroll.png",
+    "ui":  {
+               "panelWidthFactor":  0.99,
+               "panelMaxWidth":  950,
+               "panelHeightFactor":  0.96,
+               "frameInsets":  {
+                                   "leftFactor":  0.18,
+                                   "rightFactor":  0.18,
+                                   "topFactor":  0.14,
+                                   "bottomFactor":  0.12,
+                                   "minLeft":  40,
+                                   "minRight":  40,
+                                   "minTop":  36,
+                                   "minBottom":  28
+                               },
+               "contentBox":  {
+                                  "backgroundColorHex":  "#FFF6E8",
+                                  "backgroundOpacity":  0.82,
+                                  "borderColorHex":  "#A36A3A",
+                                  "borderWidth":  2,
+                                  "borderRadius":  12,
+                                  "padding":  14,
+                                  "scrollRightPadding":  10,
+                                  "scrollbar":  {
+                                                    "thumbVisibility":  true,
+                                                    "thickness":  6,
+                                                    "radius":  3
+                                                }
+                              },
+               "button":  {
+                              "text":  "ÄÃ£ hiá»ƒu!",
+                              "widthFactor":  0.50,
+                              "heightClamp":  {
+                                                  "min":  40,
+                                                  "max":  56
+                                              },
+                              "backgroundColorHex":  "#6D3F1F",
+                              "radius":  12,
+                              "elevation":  4
+                          }
+           },
+    "sections":  [
+                     {
+                         "header":  "ðŸ§§ CÃ¡c hÃ¬nh tÆ°á»£ng trong game",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Game sá»­ dá»¥ng cÃ¡c hÃ¬nh tÆ°á»£ng Táº¿t vÃ  mÃ³n Äƒn Viá»‡t Nam. Nhiá»‡m vá»¥ cá»§a báº¡n lÃ  ná»‘i (ghÃ©p) cÃ¡c hÃ¬nh giá»‘ng nhau Ä‘á»ƒ thu tháº­p Ä‘iá»ƒm."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  64,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/banh_mi.png",
+                                                              "label":  "BÃ¡nh mÃ¬",
+                                                              "text":  "MÃ³n Äƒn sÃ¡ng phá»• biáº¿n cá»§a Viá»‡t Nam"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/banh_xeo.png",
+                                                              "label":  "BÃ¡nh xÃ¨o",
+                                                              "text":  "BÃ¡nh xÃ¨o miá»n Nam thÆ¡m ngon"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/ca_phe_trung.png",
+                                                              "label":  "CÃ  phÃª trá»©ng",
+                                                              "text":  "Äáº·c sáº£n cÃ  phÃª HÃ  Ná»™i"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/goi_cuon.png",
+                                                              "label":  "Gá»i cuá»‘n",
+                                                              "text":  "MÃ³n Äƒn nháº¹ thanh mÃ¡t"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/pho_bowl.png",
+                                                              "label":  "Phá»Ÿ",
+                                                              "text":  "MÃ³n Äƒn quá»‘c há»“n quá»‘c tÃºy"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/rau_muong.png",
+                                                              "label":  "Rau muá»‘ng",
+                                                              "text":  "Rau xanh quen thuá»™c"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ¯ Má»¥c tiÃªu",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "GhÃ©p 3 hÃ¬nh giá»‘ng nhau trá»Ÿ lÃªn Ä‘á»ƒ thu tháº­p. HoÃ n thÃ nh má»¥c tiÃªu cá»§a mÃ n chÆ¡i trÆ°á»›c khi háº¿t lÆ°á»£t di chuyá»ƒn!"
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸ”„ CÃ¡ch chÆ¡i",
+                         "blocks":  [
+                                        {
+                                            "type":  "bullets",
+                                            "items":  [
+                                                          "Cháº¡m vÃ  kÃ©o Ä‘á»ƒ hoÃ¡n Ä‘á»•i 2 Ã´ ká» nhau",
+                                                          "GhÃ©p 3 Ã´ trá»Ÿ lÃªn theo hÃ ng ngang hoáº·c dá»c",
+                                                          "CÃ¡c Ã´ má»›i sáº½ rÆ¡i xuá»‘ng tá»« phÃ­a trÃªn",
+                                                          "Táº¡o combo Ä‘á»ƒ nháº­n power-ups Ä‘áº·c biá»‡t"
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "âš¡ Power-Ups Ä‘áº·c biá»‡t",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Power-ups giÃºp báº¡n vÆ°á»£t qua mÃ n khÃ³ dá»… dÃ ng hÆ¡n. Táº¡o power-ups báº±ng cÃ¡ch ghÃ©p Ä‘áº·c biá»‡t hoáº·c nháº­n miá»…n phÃ­ tá»« \"Free Boost\"."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  40,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/firecracker.png",
+                                                              "label":  "PhÃ¡o Hoa",
+                                                              "text":  "Ná»• vÃ  phÃ¡ há»§y cÃ¡c Ã´ xung quanh trong vÃ¹ng 3x3"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/party_popper_horizontal.png",
+                                                              "label":  "Party Popper Ngang",
+                                                              "text":  "PhÃ¡ há»§y toÃ n bá»™ hÃ ng ngang"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/party_popper_vertical.png",
+                                                              "label":  "Party Popper Dá»c",
+                                                              "text":  "PhÃ¡ há»§y toÃ n bá»™ cá»™t dá»c"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/sticky_rice_bomb.png",
+                                                              "label":  "Bom XÃ´i NgÅ© Sáº¯c",
+                                                              "text":  "PhÃ¡ há»§y nhiá»u Ã´ giá»‘ng nhau trÃªn bÃ n chÆ¡i"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/dragon_fly.png",
+                                                              "label":  "Chuá»“n Chuá»“n Bay",
+                                                              "text":  "Bay Ä‘áº¿n vÃ  phÃ¡ há»§y Ã´ giá»‘ng nhau gáº§n nháº¥t"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸ›µ Xe MÃ¡y (Blocker)",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Tá»« vÃ¡n 21-25 má»›i cÃ³ xe mÃ¡y nhÃ©. Táº¥t cáº£ vÃ¡n cÃ³ xe mÃ¡y Ä‘á»u pháº£i clear xe mÃ¡y má»›i win Ä‘Æ°á»£c nhÃ©. Xe mÃ¡y chá»‰ clear Ä‘Æ°á»£c báº±ng cÃ¡ch ghÃ©p nhá»¯ng sprite thÃ´ng thÆ°á»ng, hoáº·c tá»± ghÃ©p khi cascade. Khi xe mÃ¡y cháº¡y xe cÃ³ lÃ­ do nhÃ© vÃ¬ rÃºt xe hoáº·c bÃ¡nh chÆ°ng."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  40,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/tile_blocker/scooter_tile_blocker.png",
+                                                              "label":  "Xe mÃ¡y",
+                                                              "text":  "Chá»‰ phÃ¡ Ä‘Æ°á»£c khi ghÃ©p Ã´ thÆ°á»ng á»Ÿ cáº¡nh hoáº·c qua cascade"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/particles/scooter_particle_1.png",
+                                                              "label":  "Máº£nh vá»¡",
+                                                              "text":  "Hiá»‡u á»©ng vá»¡ khi xe mÃ¡y bá»‹ phÃ¡"
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/particles/scooter_particle_2.png",
+                                                              "label":  "Máº£nh vá»¡",
+                                                              "text":  "Hiá»‡u á»©ng vá»¡ bá»• sung"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ† LÆ°u Ã½ quan trá»ng",
+                         "blocks":  [
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  40,
+                                            "spriteTextGap":  10,
+                                            "rowGap":  8,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/firecracker.png",
+                                                              "label":  "Cáº£nh bÃ¡o vá» PhÃ¡o Hoa",
+                                                              "text":  "PhÃ¡o hoa cÃ³ thá»ƒ phÃ¡ há»§y cÃ¡c power-ups khÃ¡c trong vÃ¹ng ná»•. HÃ£y sá»­ dá»¥ng cáº©n tháº­n Ä‘á»ƒ khÃ´ng lÃ m máº¥t power-ups quÃ½ giÃ¡!"
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ Free Boost \u0026 Pháº§n thÆ°á»Ÿng",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Nháº¥n nÃºt \"Free Boost\" Ä‘á»ƒ xem quáº£ng cÃ¡o vÃ  nháº­n power-ups miá»…n phÃ­. ÄÃ¢y lÃ  cÃ¡ch Ä‘á»ƒ báº¡n á»§ng há»™ nhÃ  phÃ¡t triá»ƒn!"
+                                        },
+                                        {
+                                            "type":  "bullets",
+                                            "items":  [
+                                                          "Xem quáº£ng cÃ¡o Ä‘á»ƒ nháº­n power-ups miá»…n phÃ­",
+                                                          "Sá»­ dá»¥ng power-ups khi gáº·p mÃ n chÆ¡i khÃ³",
+                                                          "Náº¿u thÃ­ch game, hÃ£y Ä‘á»ƒ láº¡i Ä‘Ã¡nh giÃ¡ 5 sao nhÃ© â­"
+                                                      ]
+                                        }
+                                    ]
+                     }
+                 ]
+}

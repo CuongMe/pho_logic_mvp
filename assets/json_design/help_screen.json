@@ -1,0 +1,185 @@
+﻿{
+    "schemaVersion":  1,
+    "screen":  "help",
+    "title":  "HÆ°á»›ng Dáº«n ChÆ¡i",
+    "frameImage":  "assets/ui/menu/pause_scroll.png",
+    "ui":  {
+               "panelWidthFactor":  0.96,
+               "panelMaxWidth":  720,
+               "panelHeightFactor":  0.9,
+               "contentBox":  {
+                                  "backgroundColorHex":  "#FFF6E8",
+                                  "backgroundOpacity":  0.82,
+                                  "borderColorHex":  "#A36A3A",
+                                  "borderWidth":  2,
+                                  "borderRadius":  12,
+                                  "padding":  16,
+                                  "scrollRightPadding":  12,
+                                  "scrollbar":  {
+                                                    "thumbVisibility":  true,
+                                                    "thickness":  8,
+                                                    "radius":  4
+                                                }
+                              },
+               "button":  {
+                              "text":  "ÄÃ£ hiá»ƒu!",
+                              "widthFactor":  0.55,
+                              "heightClamp":  {
+                                                  "min":  44,
+                                                  "max":  64
+                                              },
+                              "backgroundColorHex":  "#6D3F1F",
+                              "radius":  14,
+                              "elevation":  4
+                          }
+           },
+    "sections":  [
+                     {
+                         "header":  "ðŸ§§ CÃ¡c hÃ¬nh tÆ°á»£ng trong game",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Game gá»“m cÃ¡c hÃ¬nh tÆ°á»£ng Táº¿t / áº©m thá»±c Viá»‡t sau Ä‘Ã¢y. Báº¡n sáº½ ná»‘i (match) cÃ¡c hÃ¬nh giá»‘ng nhau Ä‘á»ƒ thu tháº­p (collect)."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  44,
+                                            "spriteTextGap":  12,
+                                            "rowGap":  10,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/banh_mi.png",
+                                                              "label":  "BÃ¡nh mÃ¬",
+                                                              "text":  "Tile bÃ¡nh mÃ¬."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/banh_xeo.png",
+                                                              "label":  "BÃ¡nh xÃ¨o",
+                                                              "text":  "Tile bÃ¡nh xÃ¨o."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/ca_phe_trung.png",
+                                                              "label":  "CÃ  phÃª trá»©ng",
+                                                              "text":  "Tile cÃ  phÃª trá»©ng."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/goi_cuon.png",
+                                                              "label":  "Gá»i cuá»‘n",
+                                                              "text":  "Tile gá»i cuá»‘n."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/pho_bowl.png",
+                                                              "label":  "TÃ´ phá»Ÿ",
+                                                              "text":  "Tile tÃ´ phá»Ÿ."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/rau_muong.png",
+                                                              "label":  "Rau muá»‘ng",
+                                                              "text":  "Tile rau muá»‘ng."
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ¯ Má»¥c tiÃªu",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Ná»‘i 3 (hoáº·c nhiá»u hÆ¡n) hÃ¬nh giá»‘ng nhau Ä‘á»ƒ collect. HoÃ n thÃ nh má»¥c tiÃªu mÃ n chÆ¡i trÆ°á»›c khi háº¿t lÆ°á»£t Ä‘i."
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸ”„ CÃ¡ch chÆ¡i",
+                         "blocks":  [
+                                        {
+                                            "type":  "bullets",
+                                            "items":  [
+                                                          "Äá»•i chá»— (swap) 2 Ã´ ká» nhau Ä‘á»ƒ táº¡o match",
+                                                          "Match 3+ theo hÃ ng ngang hoáº·c dá»c Ä‘á»ƒ collect",
+                                                          "Tile má»›i sáº½ rÆ¡i xuá»‘ng tá»« phÃ­a trÃªn",
+                                                          "Táº¡o combo Ä‘á»ƒ cÃ³ power-ups máº¡nh hÆ¡n"
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "âš¡ Power-Ups trong game",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Power-ups giÃºp báº¡n vÆ°á»£t mÃ n khÃ³ nhanh hÆ¡n. Báº¡n cÃ³ thá»ƒ táº¡o power-ups báº±ng cÃ¡ch táº¡o match Ä‘áº·c biá»‡t (combo) hoáº·c nháº­n miá»…n phÃ­ tá»« â€œFree Boostâ€."
+                                        },
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  44,
+                                            "spriteTextGap":  12,
+                                            "rowGap":  10,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/firecracker.png",
+                                                              "label":  "Firecracker (PhÃ¡o hoa)",
+                                                              "text":  "GÃ¢y ná»• vÃ  phÃ¡ há»§y cÃ¡c tile trong vÃ¹ng áº£nh hÆ°á»Ÿng."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/party_popper_horizontal.png",
+                                                              "label":  "Party Popper (Ngang)",
+                                                              "text":  "PhÃ¡ 1 hÃ ng ngang (row clear)."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/party_popper_vertical.png",
+                                                              "label":  "Party Popper (Dá»c)",
+                                                              "text":  "PhÃ¡ 1 cá»™t dá»c (column clear)."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/sticky_rice_bomb.png",
+                                                              "label":  "Sticky Rice Bomb (XÃ´i)",
+                                                              "text":  "PhÃ¡ nhiá»u tile giá»‘ng nhau (clear rá»™ng / chain)."
+                                                          },
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/dragon_fly.png",
+                                                              "label":  "Dragon Fly (Chuá»“n chuá»“n bay)",
+                                                              "text":  "Chuá»“n chuá»“n bay sáº½ bay Ä‘áº¿n vá»‹ trÃ­ cá»§a tile giá»‘ng nhau gáº§n nháº¥t vÃ  phÃ¡ há»§y nÃ³."
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ† LÆ°u Ã½ quan trá»ng",
+                         "blocks":  [
+                                        {
+                                            "type":  "rows",
+                                            "spriteSize":  44,
+                                            "spriteTextGap":  12,
+                                            "rowGap":  10,
+                                            "items":  [
+                                                          {
+                                                              "sprite":  "assets/sprites/power-ups/firecracker.png",
+                                                              "label":  "Firecracker (PhÃ¡o hoa)",
+                                                              "text":  "Firecracker sáº½ phÃ¡ há»§y cÃ¡c power-ups khÃ¡c náº¿u chÃºng náº±m trong vÃ¹ng ná»•. HÃ£y dÃ¹ng cáº©n tháº­n Ä‘á»ƒ khÃ´ng â€œbayâ€ máº¥t power-ups báº¡n Ä‘ang muá»‘n giá»¯."
+                                                          }
+                                                      ]
+                                        }
+                                    ]
+                     },
+                     {
+                         "header":  "ðŸŽ Free Boost \u0026 pháº§n thÆ°á»Ÿng",
+                         "blocks":  [
+                                        {
+                                            "type":  "text",
+                                            "text":  "Nháº¥n â€œFree Boostâ€ Ä‘á»ƒ xem quáº£ng cÃ¡o vÃ  nháº­n pháº§n thÆ°á»Ÿng. ÄÃ¢y lÃ  cÃ¡ch á»§ng há»™ developer báº±ng viá»‡c xem ads Ä‘á»ƒ nháº­n power-ups."
+                                        },
+                                        {
+                                            "type":  "bullets",
+                                            "items":  [
+                                                          "Xem ads Ä‘á»ƒ nháº­n power-ups miá»…n phÃ­",
+                                                          "DÃ¹ng power-ups khi gáº·p mÃ n khÃ³",
+                                                          "Náº¿u báº¡n thÃ­ch game, hÃ£y Ä‘á»ƒ láº¡i review Ä‘á»ƒ á»§ng há»™ nhÃ©"
+                                                      ]
+                                        }
+                                    ]
+                     }
+                 ]
+}

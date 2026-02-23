@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "screen": "world_1",
+  "designWidth": 1080,
+  "designHeight": 1920,
+  "background": "assets/backgrounds/level_select/world_001_bg.png",
+  "elements": [
+    {
+      "type": "image",
+      "id": "cloud_1",
+      "file": "assets/world/world_001/clouds/cloud_1.png",
+      "position": { "x": 200, "y": 350 },
+      "size": { "w": 450, "h": 180 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "cloud_2",
+      "file": "assets/world/world_001/clouds/cloud_2.png",
+      "position": { "x": 800, "y": 400 },
+      "size": { "w": 480, "h": 195 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "cloud_3",
+      "file": "assets/world/world_001/clouds/cloud_3.png",
+      "position": { "x": 600, "y": 250 },
+      "size": { "w": 375, "h": 150 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "bamboo",
+      "file": "assets/world/world_001/bamboo.png",
+      "position": { "x": 900, "y": 1000 },
+      "size": { "w": 1100, "h": 2500 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "home",
+      "file": "assets/ui/level_select/nav/home.png",
+      "position": { "x": 100, "y": 100 },
+      "size": { "w": 380, "h": 170 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "progress",
+      "file": "assets/ui/level_select/nav/home.png",
+      "position": { "x": 100, "y": 360 },
+      "size": { "w": 460, "h": 210 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "previous",
+      "file": "assets/ui/level_select/nav/previous.png",
+      "position": { "x": 140, "y": 1900 },
+      "size": { "w": 240, "h": 240 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "next",
+      "file": "assets/ui/level_select/nav/next.png",
+      "position": { "x": 950, "y": 1900 },
+      "size": { "w": 240, "h": 240 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "stage_1",
+      "file": "assets/world/world_001/lanterns/lantern_1.png",
+      "position": { "x": 380, "y": 1900 },
+      "size": { "w": 180, "h": 220 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "stage_2",
+      "file": "assets/world/world_001/lanterns/lantern_2.png",
+      "position": { "x": 650, "y": 1645 },
+      "size": { "w": 180, "h": 220 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "stage_3",
+      "file": "assets/world/world_001/lanterns/lantern_3.png",
+      "position": { "x": 490, "y": 1335 },
+      "size": { "w": 180, "h": 220 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "stage_4",
+      "file": "assets/world/world_001/lanterns/lantern_4.png",
+      "position": { "x": 610, "y": 1050 },
+      "size": { "w": 180, "h": 220 },
+      "anchor": "center"
+    },
+
+    {
+      "type": "button",
+      "id": "stage_5",
+      "file": "assets/world/world_001/lanterns/lantern_5.png",
+      "position": { "x": 340, "y": 1000 },
+      "size": { "w": 180, "h": 220 },
+      "anchor": "center"
+    }
+
+  ]
+}

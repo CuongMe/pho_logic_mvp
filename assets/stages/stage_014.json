@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "stageId": 14,
+  "stageKey": "stage_014",
+  "name": "Stage 014",
+  "difficulty": "medium",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+
+    "shape": {
+      "type": "mask",
+      "notes": "Diamond core. Wide middle rows, narrow top/bottom. 1 = cell exists, 0 = void.",
+      "mask": [
+        [0,0,1,1,1,0,0],
+        [0,1,1,1,1,1,0],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [0,1,1,1,1,1,0],
+        [0,0,1,1,1,0,0]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 19 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 13 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 19 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 12 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 19 }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [-1,-1,0,0,0,-1,-1],
+    [-1,0,0,0,0,0,-1],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [-1,0,0,0,0,0,-1],
+    [-1,-1,0,0,0,-1,-1]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = no tile (void/empty); >= 1 = fixed tile id. This matches grid.shape.mask exactly.",
+    "cells": [
+      [-1,-1,0,0,0,-1,-1],
+      [-1,0,0,0,0,0,-1],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [-1,0,0,0,0,0,-1],
+      [-1,-1,0,0,0,-1,-1]
+    ]
+  },
+
+  "moves": 22,
+
+  "objectives": [
+    { "type": "collect", "tileId": 4, "target": 14 },
+    { "type": "collect", "tileId": 1, "target": 12 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 014: diamond board promotes central chaining. Medium difficulty, good pacing before harder split boards."
+  }
+}

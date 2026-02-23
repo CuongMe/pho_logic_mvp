@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "screen": "menu",
+  "designWidth": 1080,
+  "designHeight": 1920,
+  "background": "assets/backgrounds/menu/menu_bg.png",
+  "elements": [
+    {
+      "type": "image",
+      "id": "logo",
+      "file": "assets/ui/menu/logo.png",
+      "position": { "x": 540, "y": 450 },
+      "size": { "w": 1000, "h": 600 },
+      "anchor": "center"
+    },
+    {
+      "type": "button",
+      "id": "play",
+      "file": "assets/ui/menu/buttons/play.png",
+      "position": { "x": 540, "y": 850 },
+      "size": { "w": 700, "h": 250 },
+      "anchor": "center"
+    },
+    {
+      "type": "button",
+      "id": "boost",
+      "file": "assets/ui/menu/buttons/boost.png",
+      "position": { "x": 540, "y": 1150 },
+      "size": { "w": 800, "h": 280 },
+      "anchor": "center"
+    },
+    {
+      "type": "button",
+      "id": "help",
+      "file": "assets/ui/menu/buttons/help.png",
+      "position": { "x": 540, "y": 1480 },
+      "size": { "w": 800, "h": 280 },
+      "anchor": "center"
+    },
+    {
+      "type": "button",
+      "id": "settings",
+      "file": "assets/ui/menu/buttons/setting.png",
+      "position": { "x": 1000, "y": 120 },
+      "size": { "w": 160, "h": 160 },
+      "anchor": "center"
+    }
+  ]
+}

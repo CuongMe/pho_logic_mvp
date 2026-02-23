@@ -1,0 +1,159 @@
+{
+  "frames": {
+    "pho_bowl.png": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 118,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 15,
+        "w": 118,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "banh_xeo.png": {
+      "frame": {
+        "x": 124,
+        "y": 2,
+        "w": 117,
+        "h": 107
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 10,
+        "w": 117,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 129,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "rau_muong.png": {
+      "frame": {
+        "x": 2,
+        "y": 110,
+        "w": 117,
+        "h": 87
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 23,
+        "w": 117,
+        "h": 87
+      },
+      "sourceSize": {
+        "w": 129,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ca_phe_trung.png": {
+      "frame": {
+        "x": 245,
+        "y": 2,
+        "w": 109,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 14,
+        "w": 109,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "banh_mi.png": {
+      "frame": {
+        "x": 358,
+        "y": 2,
+        "w": 108,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 29,
+        "w": 108,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 129,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "goi_cuon.png": {
+      "frame": {
+        "x": 470,
+        "y": 2,
+        "w": 97,
+        "h": 95
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 14,
+        "w": 97,
+        "h": 95
+      },
+      "sourceSize": {
+        "w": 129,
+        "h": 129
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "texture.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 569,
+      "h": 199
+    },
+    "scale": 1
+  }
+}

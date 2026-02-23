@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "screen": "gameplay_1",
+  "designWidth": 1080,
+  "designHeight": 1920,
+  "background": "assets/backgrounds/gameplay/screen_bg_1.png",
+
+  "elements": [
+    {
+      "type": "container",
+      "id": "board_frame",
+      "file": "assets/boards/frames/board.png",
+      "position": { "x": 540, "y": 960 },
+      "size": { "w": 1080, "h": 1500 },
+      "innerOffset": { "x": 0, "y": 80 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "bottom_hud",
+      "file": "assets/boards/frames/bottom_hud.png",
+      "position": { "x": 540, "y": 1825 },
+      "size": { "w": 1080, "h": 241 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "top_hud",
+      "file": "assets/boards/frames/top_hud.png",
+      "position": { "x": 540, "y": 100 },
+      "size": { "w": 1080, "h": 241 },
+      "anchor": "center"
+    },
+    {
+      "type": "button",
+      "id": "pause",
+      "file": "assets/hud/gameplay/pause_button.png",
+      "position": { "x": 950, "y": 100 },
+      "size": { "w": 175, "h": 150 },
+      "anchor": "center"
+    },
+    {
+      "type": "movesCounter",
+      "id": "moves_counter",
+      "position": { "x": 750, "y": 100 },
+      "size": { "w": 200, "h": 80 },
+      "anchor": "center"
+    },
+    {
+      "type": "objective",
+      "id": "objective",
+      "position": { "x": 250, "y": 100 },
+      "size": { "w": 900, "h": 160 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "luckycat",
+      "file": "assets/decor/gameplay/lucky_cat.png",
+      "position": { "x": 125, "y": 1825 },
+      "size": { "w": 120, "h": 150 },
+      "anchor": "center"
+    },
+    {
+      "type": "image",
+      "id": "lotus",
+      "file": "assets/decor/gameplay/lotus.png",
+      "position": { "x": 950, "y": 1825 },
+      "size": { "w": 140, "h": 170 },
+      "anchor": "center"
+    },
+    {
+      "type": "powerUpSlot",
+      "id": "boost_101",
+      "tileTypeId": 101,
+      "file": "assets/sprites/power-ups/party_popper_horizontal.png",
+      "position": { "x": 305, "y": 1825 },
+      "size": { "w": 110, "h": 110 },
+      "anchor": "center",
+      "badgeDx": 33,
+      "badgeDy": -33
+    },
+    {
+      "type": "powerUpSlot",
+      "id": "boost_102",
+      "tileTypeId": 102,
+      "file": "assets/sprites/power-ups/party_popper_vertical.png",
+      "position": { "x": 420, "y": 1825 },
+      "size": { "w": 110, "h": 110 },
+      "anchor": "center",
+      "badgeDx": 33,
+      "badgeDy": -33
+    },
+    {
+      "type": "powerUpSlot",
+      "id": "boost_103",
+      "tileTypeId": 103,
+      "file": "assets/sprites/power-ups/sticky_rice_bomb.png",
+      "position": { "x": 535, "y": 1825 },
+      "size": { "w": 110, "h": 110 },
+      "anchor": "center",
+      "badgeDx": 33,
+      "badgeDy": -33
+    },
+    {
+      "type": "powerUpSlot",
+      "id": "boost_104",
+      "tileTypeId": 104,
+      "file": "assets/sprites/power-ups/firecracker.png",
+      "position": { "x": 650, "y": 1825 },
+      "size": { "w": 110, "h": 110 },
+      "anchor": "center",
+      "badgeDx": 33,
+      "badgeDy": -33
+    },
+    {
+      "type": "powerUpSlot",
+      "id": "boost_105",
+      "tileTypeId": 105,
+      "file": "assets/sprites/power-ups/dragon_fly.png",
+      "position": { "x": 765, "y": 1825 },
+      "size": { "w": 110, "h": 110 },
+      "anchor": "center",
+      "badgeDx": 33,
+      "badgeDy": -33
+    }
+  ],
+
+  "gridRect": {
+    "x": 120,
+    "y": 325,
+    "w": 850,
+    "h": 1260
+  },
+
+  "metadata": {
+    "uiOnly": true,
+    "notes": "UI-only: background, lotus, luckycat, board container, top & bottom HUD, pause and help buttons. Level data should be in assets/stages/*.json. gridRect defines the board position and size (same for all stages)."
+  }
+}

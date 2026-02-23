@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "stageId": 12,
+  "stageKey": "stage_012",
+  "name": "Stage 012",
+  "difficulty": "hard",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+    "shape": {
+      "type": "mask",
+      "notes": "Hourglass: wide top/bottom, narrow middle waist. 1 = cell exists, 0 = void.",
+      "mask": [
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [0,1,1,1,1,1,0],
+        [0,0,1,1,1,0,0],
+        [0,0,1,1,1,0,0],
+        [0,1,1,1,1,1,0],
+        [1,1,1,1,1,1,1],
+        [0,1,1,1,1,1,0]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 19 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 13 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 19 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 12 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 19 }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [-1,0,0,0,0,0,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,0,0,0,0,0,-1],
+    [0,0,0,0,0,0,0],
+    [-1,0,0,0,0,0,-1]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = no tile (void/empty); >= 1 = fixed tile id. This matches grid.shape.mask exactly.",
+    "cells": [
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [-1,0,0,0,0,0,-1],
+      [-1,-1,0,0,0,-1,-1],
+      [-1,-1,0,0,0,-1,-1],
+      [-1,0,0,0,0,0,-1],
+      [0,0,0,0,0,0,0],
+      [-1,0,0,0,0,0,-1]
+    ]
+  },
+
+  "moves": 21,
+
+  "objectives": [
+    { "type": "collect", "tileId": 5, "target": 14 },
+    { "type": "collect", "tileId": 3, "target": 10 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 012: hourglass waist forces play through the center. Harder to set up long lines; rewards planning around the narrow middle."
+  }
+}

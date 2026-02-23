@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "stageId": 9,
+  "stageKey": "stage_009",
+  "name": "Stage 009",
+  "difficulty": "medium",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+
+    "shape": {
+      "type": "mask",
+      "notes": "Corner gaps: remove corners to reduce easy edge setups. 1 = cell exists, 0 = void.",
+      "mask": [
+        [0,1,1,1,1,1,0],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [0,1,1,1,1,1,0]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 19 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 13 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 19 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 12 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 19 }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [-1,0,0,0,0,0,-1],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [-1,0,0,0,0,0,-1]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = no tile (void/empty); >= 1 = fixed tile id. This matches grid.shape.mask exactly.",
+    "cells": [
+      [-1,0,0,0,0,0,-1],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [-1,0,0,0,0,0,-1]
+    ]
+  },
+
+  "moves": 20,
+
+  "objectives": [
+    { "type": "collect", "tileId": 5, "target": 14 },
+    { "type": "collect", "tileId": 2, "target": 10 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 009: near-full board but with corner voids to break predictable edge play. Slightly higher moves to encourage building mid-board setups."
+  }
+}

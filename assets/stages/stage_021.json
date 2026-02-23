@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "stageId": 21,
+  "stageKey": "stage_021",
+  "name": "Stage 021 — Power-Up Testing Arena",
+  "difficulty": "easy",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+    "shape": {
+      "type": "mask",
+      "notes": "X pattern with blockers in center. 1 = cell exists, 0 = void.",
+      "mask": [
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 20 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 20 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 20 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 20 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 10 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 10 },
+    { "id": 101, "file": "assets/sprites/power-ups/party_popper_horizontal.png", "weight": 0 },
+    { "id": 102, "file": "assets/sprites/power-ups/party_popper_vertical.png", "weight": 0 },
+    { "id": 103, "file": "assets/sprites/power-ups/sticky_rice_bomb.png", "weight": 0 },
+    { "id": 104, "file": "assets/sprites/power-ups/firecracker.png", "weight": 0 },
+    { "id": 105, "file": "assets/sprites/power-ups/dragon_fly.png", "weight": 0 }
+  ],
+
+  "blockerTypes": [
+    {
+      "id": -2,
+      "name": "scooter_tile_blocker",
+      "file": "assets/sprites/tile_blocker/scooter_tile_blocker.png",
+      "clearedBy": "adjacent_regular_match_only"
+    }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = void; 101 = party_popper_horizontal; 102 = party_popper_vertical; 103 = sticky_rice_bomb; 104 = firecracker; 105 = dragon_fly. All power-ups pre-placed for testing.",
+    "cells": [
+      [105,0,0,0,0,0,0],
+      [0,104,0,0,0,0,0],
+      [0,0,101,0,0,0,0],
+      [0,0,0,102,0,0,0],
+      [0,0,0,0,103,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0]
+    ]
+  },
+
+  "moves": 50,
+
+  "objectives": [
+    { "type": "collect", "tileId": 1, "target": 18 },
+    { "type": "collect", "tileId": 5, "target": 8 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 021: Power-up testing arena. All 5 power-ups (dragon_fly, firecracker, party_popper_horizontal, party_popper_vertical, sticky_rice_bomb) are pre-spawned on the board for testing. No blockers, increased moves."
+  }
+}

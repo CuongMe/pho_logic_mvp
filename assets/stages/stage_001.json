@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "stageId": 1,
+  "stageKey": "stage_001",
+  "name": "Stage 001",
+  "difficulty": "easy",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+
+    "shape": {
+      "type": "mask",
+      "notes": "1 = cell exists, 0 = void.",
+      "mask": [
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 18 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 18 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 18 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 10 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 18 }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = no tile (void/empty); >= 1 = fixed tile id",
+    "cells": [
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0]
+    ]
+  },
+
+  "moves": 16,
+
+  "objectives": [
+    { "type": "collect", "tileId": 5, "target": 14 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 001: simple board, one collection objective, tuned harder by making target tile rarer (weight 10) and limiting moves (16). No blockers yet."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "stageId": 16,
+  "stageKey": "stage_016",
+  "name": "Stage 016",
+  "difficulty": "medium",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+    "shape": {
+      "type": "mask",
+      "notes": "Two islands split by a vertical void river (center column), but with two bridge cells to allow cross-play.",
+      "mask": [
+        [1,1,1,0,1,1,1],
+        [1,1,1,0,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,0,1,1,1],
+        [1,1,1,0,1,1,1],
+        [1,1,1,1,1,1,1],
+        [1,1,1,0,1,1,1],
+        [0,1,1,0,1,1,0]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 19 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 13 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 19 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 12 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 19 }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,0,-1,0,0,0],
+    [0,0,0,-1,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,-1,0,0,0],
+    [0,0,0,-1,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,-1,0,0,0],
+    [-1,0,0,-1,0,0,-1]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = no tile (void/empty); >= 1 = fixed tile id. Matches mask exactly.",
+    "cells": [
+      [0,0,0,-1,0,0,0],
+      [0,0,0,-1,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,-1,0,0,0],
+      [0,0,0,-1,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,-1,0,0,0],
+      [-1,0,0,-1,0,0,-1]
+    ]
+  },
+
+  "moves": 20,
+
+  "objectives": [
+    { "type": "collect", "tileId": 5, "target": 14 },
+    { "type": "collect", "tileId": 3, "target": 10 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 016: split-board pressure but two bridge rows allow cross-board setups. Teaches players to play around bridges."
+  }
+}

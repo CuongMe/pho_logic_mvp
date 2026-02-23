@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "stageId": 8,
+  "stageKey": "stage_008",
+  "name": "Stage 008",
+  "difficulty": "medium",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+
+    "shape": {
+      "type": "mask",
+      "notes": "Split lanes: left lane (cols 0-1), middle lane (col 3), right lane (cols 5-6). 1 = cell exists, 0 = void.",
+      "mask": [
+        [1,1,0,1,0,1,1],
+        [1,1,0,1,0,1,1],
+        [1,1,0,1,0,1,1],
+        [1,1,0,1,0,1,1],
+        [1,1,0,1,0,1,1],
+        [1,1,0,1,0,1,1],
+        [1,1,0,1,0,1,1],
+        [0,1,0,1,0,1,0]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 19 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 18 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 13 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 19 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 12 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 19 }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,-1,0,-1,0,0],
+    [0,0,-1,0,-1,0,0],
+    [0,0,-1,0,-1,0,0],
+    [0,0,-1,0,-1,0,0],
+    [0,0,-1,0,-1,0,0],
+    [0,0,-1,0,-1,0,0],
+    [0,0,-1,0,-1,0,0],
+    [-1,0,-1,0,-1,0,-1]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = no tile (void/empty); >= 1 = fixed tile id. This matches grid.shape.mask exactly.",
+    "cells": [
+      [0,0,-1,0,-1,0,0],
+      [0,0,-1,0,-1,0,0],
+      [0,0,-1,0,-1,0,0],
+      [0,0,-1,0,-1,0,0],
+      [0,0,-1,0,-1,0,0],
+      [0,0,-1,0,-1,0,0],
+      [0,0,-1,0,-1,0,0],
+      [-1,0,-1,0,-1,0,-1]
+    ]
+  },
+
+  "moves": 18,
+
+  "objectives": [
+    { "type": "collect", "tileId": 4, "target": 12 },
+    { "type": "collect", "tileId": 3, "target": 8 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 008: three-lane board reduces horizontal freedom and makes routing tiles between lanes important. Collect encourages working across lanes instead of camping one side."
+  }
+}

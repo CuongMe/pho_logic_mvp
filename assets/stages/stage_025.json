@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "stageId": 25,
+  "stageKey": "stage_025",
+  "name": "Stage 025 — Scooter Storm",
+  "difficulty": "very_hard",
+
+  "grid": {
+    "rows": 8,
+    "columns": 7,
+    "layoutStyle": "orthogonal",
+    "placement": {
+      "anchor": "center",
+      "offset": { "x": 0, "y": 0 }
+    },
+    "shape": {
+      "type": "mask",
+      "notes": "Hourglass shape with maximum blockers. 1 = cell exists, 0 = void.",
+      "mask": [
+        [1,1,1,1,1,1,1],
+        [0,1,1,1,1,1,0],
+        [0,0,1,1,1,0,0],
+        [0,0,0,1,0,0,0],
+        [0,0,0,1,0,0,0],
+        [0,0,1,1,1,0,0],
+        [0,1,1,1,1,1,0],
+        [1,1,1,1,1,1,1]
+      ]
+    }
+  },
+
+  "spawnRules": {
+    "allowInitialMatches": false
+  },
+
+  "tiles": [
+    { "id": 1, "file": "assets/sprites/banh_mi.png", "weight": 15 },
+    { "id": 2, "file": "assets/sprites/banh_xeo.png", "weight": 15 },
+    { "id": 3, "file": "assets/sprites/ca_phe_trung.png", "weight": 15 },
+    { "id": 4, "file": "assets/sprites/goi_cuon.png", "weight": 15 },
+    { "id": 5, "file": "assets/sprites/pho_bowl.png", "weight": 20 },
+    { "id": 6, "file": "assets/sprites/rau_muong.png", "weight": 20 }
+  ],
+
+  "blockerTypes": [
+    {
+      "id": -2,
+      "name": "scooter_tile_blocker",
+      "file": "assets/sprites/tile_blocker/scooter_tile_blocker.png",
+      "clearedBy": "adjacent_regular_match_only"
+    }
+  ],
+
+  "bedTypes": [
+    {
+      "id": 0,
+      "name": "default",
+      "file": "assets/boards/beds/tile_bed_default.png",
+      "destructible": false,
+      "hp": 0
+    }
+  ],
+
+  "bedMap": [
+    [0,0,0,0,0,0,0],
+    [-1,0,0,0,0,0,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,-1,-1,0,-1,-1,-1],
+    [-1,-1,-1,0,-1,-1,-1],
+    [-1,-1,0,0,0,-1,-1],
+    [-1,0,0,0,0,0,-1],
+    [0,0,0,0,0,0,0]
+  ],
+
+  "tileMap": {
+    "notes": "0 = spawn random by weights; -1 = void; -2 = scooter_tile_blocker. Heavy blocker presence in hourglass choke points.",
+    "cells": [
+      [0,-2,0,0,0,-2,0],
+      [-1,0,-2,0,-2,0,-1],
+      [-1,-1,-2,0,-2,-1,-1],
+      [-1,-1,-1,-2,-1,-1,-1],
+      [-1,-1,-1,-2,-1,-1,-1],
+      [-1,-1,-2,0,-2,-1,-1],
+      [-1,0,-2,0,-2,0,-1],
+      [0,-2,0,0,0,-2,0]
+    ]
+  },
+
+  "moves": 30,
+
+  "objectives": [
+    { "type": "collect", "tileId": 4, "target": 24 },
+    { "type": "collect", "tileId": 2, "target": 20 },
+    { "type": "collect", "tileId": 6, "target": 14 }
+  ],
+
+  "metadata": {
+    "notes": "Stage 025: Scooter Storm - hourglass board with 14 blockers concentrated in upper and lower sections. Narrow center choke point. Ultimate blocker challenge with 3 objectives."
+  }
+}

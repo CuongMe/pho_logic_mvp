@@ -1,0 +1,111 @@
+name: pho_logic
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+6
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Flame game engine and audio
+  flame: ^1.22.1
+  flame_audio: ^2.11.3
+  
+  # Audio playback
+  audioplayers: ^6.1.0
+  
+  # Persistent storage
+  shared_preferences: ^2.3.5
+  
+  # Logging
+  logger: ^2.5.0
+  
+  # URL Launcher - for opening Google Forms and external links
+  url_launcher: ^6.3.2
+  msix: ^3.16.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/app_launcher_icon.png
+
+msix_config:
+  store: true
+  sign_msix: false
+  install_certificate: false
+  display_name: Phở Logic
+  publisher_display_name: CuongTModwork
+  identity_name: CuongTModwork.PhLogic
+  publisher: CN=21882520-FCCF-4DC6-8ACF-C8FFA5485560
+  msix_version: 1.0.5.0
+  logo_path: assets/app_launcher_icon.png
+  capabilities: internetClient
+  execution_alias: phologic
+  enable_run_as_admin: false
+
+flutter:
+  uses-material-design: true
+  
+  # Asset paths
+  assets:
+    # Audio
+    - assets/audio/bgm/
+    - assets/audio/sfx/
+    - assets/audio/sfx_tuning.json
+    
+    # Backgrounds
+    - assets/backgrounds/gameplay/
+    - assets/backgrounds/level_select/
+    - assets/backgrounds/menu/
+    
+    # Boards
+    - assets/boards/beds/
+    - assets/boards/frames/
+    
+    # Decor
+    - assets/decor/gameplay/
+    
+    # HUD
+    - assets/hud/gameplay/
+    
+    # JSON design files
+    - assets/json_design/
+    
+    # Numbers
+    - assets/numbers/
+    
+    # Sprites (MUST include base sprites/ folder for game tiles)
+    - assets/sprites/
+    - assets/sprites/particles/
+    - assets/sprites/power-ups/
+    - assets/sprites/tile_blocker/
+    
+    # Stages
+    - assets/stages/
+    
+    # Test assets
+    - assets/test/
+    
+    # UI
+    - assets/ui/level_select/
+    - assets/ui/level_select/nav/
+    - assets/ui/menu/
+    - assets/ui/menu/buttons/
+    
+    # Win/Lose screens
+    - assets/win_lose/
+    
+    # World
+    - assets/world/world_001/
+    - assets/world/world_001/characters/
+    - assets/world/world_001/clouds/
+    - assets/world/world_001/lanterns/

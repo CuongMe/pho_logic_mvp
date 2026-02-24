@@ -34,4 +34,5 @@ Pho Logic is built with Flutter (Dart) and the Flame engine, combining app-level
 The current version is `1.0.0+6`, and the project remains an actively refined prototype centered on gameplay feel, visual consistency, and cross-platform reliability.
 
 ## License
-Licensed under the MPL2.0 License. See `LICENSE`. If you build on top of this please give credits to this source git, it would be much appreciated. 
+Update License Feb 24th, 2026
+Licensed under the GNU GPL Public License v3 (No Redistribution With Closed License). See `LICENSE`. If you build on top of this please give credits to this source git, it would be much appreciated. 

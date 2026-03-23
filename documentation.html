@@ -15,10 +15,12 @@
         <img class="brand-logo" src="images/app_launcher_icon.png" alt="Phở Logic logo" />
         <div class="brand-text">
           <span class="brand-title">Phở Logic</span>
-          <span class="brand-tag">coloful puzzle game</span>
+          <span class="brand-tag">colorful puzzle game</span>
         </div>
       </a>
       <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home/Privacy</a>
+        <a href="documentation.html" aria-current="page">Documentation</a>
       </nav>
     </div>
   </header>
@@ -508,11 +510,11 @@
         </p>
 
         <p>
-          Using Flutter for UI implementation and Flame for game rendering, the main technologies have been decided. However, I still need a way to monitor engagement. The best approach is to implement Google AdMob monetization and link it with Firebase Analytics. That way, I can see whether users actually play the game—for example, by checking if they use the free-boost panel to claim free items.
+          Using Flutter for UI implementation and Flame for game rendering, the main technologies have been decided. To monitor engagement, I focus on gameplay behavior and optional in-app feedback signals. This helps me understand whether users are actually playing the game—for example, by checking if they use the free-boost panel to claim free items.
         </p>
 
         <p>
-          For UX, I did not include banner ads or long interstitial ads. Instead, an optional feedback section is integrated into Settings for users who want to share feedback (or to vent 😂). I used Google Forms because it's a simple and effective way to collect opinions. No personal information or compulsory questions are included, and users are warned not to share personal information. Applying what I learned in computing school, I avoided leading questions and made sure the questions are clear and easy to answer.
+          For UX, the app currently has no ads. Instead, an optional feedback section is integrated into Settings for users who want to share feedback. I used Google Forms because it's a simple and effective way to collect opinions. No personal information or compulsory questions are included, and users are warned not to share personal information. Applying what I learned in computing school, I avoided leading questions and made sure the questions are clear and easy to answer.
         </p>
 
         <h3>Key Technologies Summary</h3>
@@ -559,7 +561,7 @@
         </div>
 
         <p>
-          The basics of Flutter application development—I won't go into those details. <code>app.dart</code>, <code>main.dart</code>, <code>routes.dart</code> are basic files that are required for basic application development. <code>main.dart</code> starts the app (this is also where you run the application, call any necessary SDKs such as Google Ads, and initialize any async operations), <code>app.dart</code> wraps around the build, and <code>routes.dart</code> is where you set up the navigations of the app.
+          The basics of Flutter application development—I won't go into those details. <code>app.dart</code>, <code>main.dart</code>, <code>routes.dart</code> are basic files that are required for basic application development. <code>main.dart</code> starts the app (this is also where you run the application, initialize SDKs, and run required async startup operations), <code>app.dart</code> wraps around the build, and <code>routes.dart</code> is where you set up app navigation.
         </p>
 
         <p>
@@ -569,7 +571,6 @@
         <h3>Project Organization Overview</h3>
         <pre><code>lib/
 ├── main.dart                    # App entry point
-├── ads/                         # Ad integration (Google AdMob)
 └── src/
     ├── app/                     # App-level setup (MaterialApp, routes)
     ├── audio/                   # Sound effects & background music
@@ -787,19 +788,6 @@
         <p class="section-tag">Challenges, trade-offs, and what I'd do differently</p>
       </div>
       <div class="section-content">
-        <p>
-          Building this app came with several limitations. As a junior solo developer working under time pressure, I prioritized shipping core features over deeper polishing and optimization.
-        </p>
-
-        <h3>1) Performance Optimization</h3>
-        <p>
-          The game is not fully optimized yet. Right now it redraws sprites every frame in a straightforward but inefficient way, which can reduce performance. A better approach would be sprite batching: packing assets into a single sprite sheet and rendering them with fewer draw calls, so the board controller can pull sprites from one atlas and reduce overhead.
-        </p>
-
-        <h3>2) Asset Size Efficiency</h3>
-        <p>
-          My art assets are oversized for this genre. Tile assets should typically be around 64 to 128 pixels for this style of game, which would reduce memory usage and improve rendering speed across devices.
-        </p>
 
         <h3>3) Engine Fit and Development Focus</h3>
         <p>

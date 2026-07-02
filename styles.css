@@ -323,6 +323,25 @@ main {
   color: var(--ink);
 }
 
+.policy-card a {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.ads-file-block {
+  background: #1f1a18;
+  color: #f7efe8;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.ads-file-block code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
 /* ========================================
    Footer
    ======================================== */
